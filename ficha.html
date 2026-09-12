@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Preparação — RPG</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="sheet-page">
+  <div class="grain"></div>
+
+  <main class="instructions">
+    <div class="section-label">ETAPA 01</div>
+    <h1>Prepare o seu personagem.</h1>
+    <p class="intro">Antes de entrar na história, você precisará criar alguém que possa vivê-la.</p>
+
+    <div class="steps">
+      <article class="step">
+        <span>01</span>
+        <div>
+          <h2>Crie seu personagem</h2>
+          <p>Defina nome, idade, aparência e personalidade. Seu personagem deve ser alguém comum dentro deste mundo.</p>
+        </div>
+      </article>
+
+      <article class="step">
+        <span>02</span>
+        <div>
+          <h2>Escolha sua Origem</h2>
+          <p>Escolha uma origem que represente a vida e as experiências que seu personagem teve antes desta história começar.</p>
+        </div>
+      </article>
+
+      <article class="step">
+        <span>03</span>
+        <div>
+          <h2>Distribua seus Atributos</h2>
+          <p>Use as regras de <strong>Sobrevivendo ao Horror</strong> para definir os pontos do seu personagem.</p>
+        </div>
+      </article>
+
+      <article class="step">
+        <span>04</span>
+        <div>
+          <h2>Escolha suas Perícias</h2>
+          <p>Selecione as perícias que combinam com aquilo que seu personagem sabe fazer.</p>
+        </div>
+      </article>
+
+      <article class="step">
+        <span>05</span>
+        <div>
+          <h2>Finalize a ficha</h2>
+          <p>Preencha seus pontos, equipamentos e informações restantes. Depois, envie a ficha para o mestre.</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="divider"></div>
+
+    <section class="more">
+      <p class="small-label">AINDA HÁ MAIS</p>
+      <h2>Existe uma última coisa que você deveria saber.</h2>
+      <p>Algumas informações não fazem parte das instruções da ficha. Elas foram deixadas separadamente.</p>
+      <button id="moreBtn" class="gold-btn">SABER MAIS</button>
+    </section>
+  </main>
+
+  <div id="letterOverlay" class="letter-overlay" aria-hidden="true">
+    <button id="closeLetter" class="close-letter">×</button>
+
+    <div id="envelope" class="envelope" role="button" tabindex="0" aria-label="Abrir carta">
+      <div class="envelope-flap"></div>
+      <div class="wax">F</div>
+    </div>
+
+    <article id="paper" class="paper" aria-hidden="true">
+      <div class="paper-inner">
+        <div class="paper-heading">ESCRITÓRIO DE ADVOCACIA</div>
+        <h1>Prezado(a) Sr.(a) John,</h1>
+        <p>É com pesar que informo o falecimento de seu tio, Sr. Bob Miller, proprietário de uma das mais conhecidas pizzarias de nossa região.</p>
+        <p>Embora o contato entre vocês tenha sido interrompido há alguns anos, seu tio jamais deixou de acompanhar, dentro do possível, a sua situação. Ele tinha conhecimento das dificuldades financeiras que você vinha enfrentando e, por esse motivo, tomou uma decisão que poderá mudar o rumo de sua vida.</p>
+        <p>Em seu testamento, ele deixou a você a propriedade de uma de suas pizzarias, juntamente com uma quantia em dinheiro destinada exclusivamente à recuperação e reabertura do estabelecimento.</p>
+        <p>Os recursos poderão ser utilizados para os reparos necessários, substituição da antiga identificação do local, divulgação da reabertura, compra de ingredientes, materiais e demais despesas relacionadas ao funcionamento da pizzaria.</p>
+        <p>Seu tio acreditava que esta oportunidade poderia lhe oferecer não apenas uma fonte de renda, mas também a possibilidade de recomeçar.</p>
+        <p>Peço que compareça ao estabelecimento comigo para que possamos tratar da documentação, apresentar-lhe a propriedade e esclarecer os detalhes da herança.</p>
+        <p>Não é necessário tomar nenhuma decisão neste momento. Primeiro, conheça o local e veja com seus próprios olhos aquilo que agora está sob sua responsabilidade.</p>
+        <p class="signature">Atenciosamente,<br><strong>James Whitmore</strong><br>Advogado responsável pelo espólio</p>
+        <button id="closePaper" class="paper-btn">FECHAR</button>
+      </div>
+    </article>
+  </div>
+
+  <audio id="bgAudio" loop preload="auto" autoplay>
+    <source src="assets/audio/thank-you-for-your-patience.mp4" type="audio/mpeg">
+  </audio>
+  <audio id="mysteryAudio" loop preload="auto">
+    <source src="assets/audio/caught-in-a-loop.mp4" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
